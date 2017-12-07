@@ -50,6 +50,7 @@ public with sharing class Queries {
 		String searchquery='FIND\'Eternus*\'IN ALL FIELDS RETURNING Account(id,name),Contact, Lead'; 
 		List<List<SObject>>searchList=search.query(searchquery);
 		System.debug(searchList);
+		
     }
     
     //Get Accounts by record type
